@@ -1,0 +1,49 @@
+[Basic UI Mockup]
+
+--------------------------
+| Featured events        |
+|  - eg, events near you |
+-------------------------- 
+ |
+ |                                          ---------
+ |                                  ------->| Local |--------------
+ |                                  |       ---------             |     -------------------
+ |                                  |                             |     |                 |
+ |                   ---------      |       ------------          |     | Home Page       |
+ |           ------->| Login |------------->| Facebook |----------|---->|  - Their rides  |
+ |           |       ---------              ------------          |     |  - Their events |
+ |           |                                                    |     |                 |
+ --------    |                              -----------           |     -------------------
+ | Home |---------------------------------->| Sign up |------------              |
+ --------                                   -----------                          |
+ |                                                                               |
+ |                                                                               |
+ |                                                                               |
+ |                                                                   -------------------------
+ |                                                                   |                       |
+ |                                                                   |                       |
+ |           --------------------                                    |                       |
+ ----------->| Search for event |<------------------------------------                       |
+             --------------------                                                            |
+                      |                                                              -------------------
+                      |                                                              | Create an event |
+                      |                                                              -------------------
+                      |
+             -------------------
+             | Join as a rider |
+             |        -        |
+             |    Join as a    |
+             |      driver     |
+             -------------------
+
+
+Planned mockups:
+Andrew -> Title
+       -> Log in
+       -> List of events 
+       -> Profile page
+
+Courtney -> Home page
+         -> Event page based on the role
+            --> Looking for driver/passenger
+            --> Option to see profiles           

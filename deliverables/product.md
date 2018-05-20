@@ -1,0 +1,12 @@
+# rideShare / Team 21
+
+#### Q1.
+Our group plans to build a mobile Android application that provides a service to help match and find carpool drivers/passengers for events. The app streamlines the process for creating and managing individual drivers, cars, and passengers, and adds flexibility in providing useful criteria for any user (such as approximate pick up location, car specifics, pitstops, etc). The main problem people experience is finding a cost effective way of transportation to and from events if they lack a reliable means of travel. We intend to provide a service in which users are able to find other nearby users whom have access to cars going to the same event.
+
+#### Q2.
+The target users are carpool drivers and passengers who are willing to share their car for traveling to various social events, as well as event organizers who struggle to feasibly manage travel plans for everyone. Our application is also intended for users who frequently carpool, in addition to those who are uncertain about the specifics for each ride. As public transportation often cannot accomodate for all event locations, passengers who are looking for carpools will be able to use our application to search for those who do provide such a service.
+
+#### Q3.
+Currently, there lacks a viable solution for organizing carpools for larger events - especially for those requiring large group coordination. Organizers are forced to manage inefficient solutions that are not particularly targeted at carpoolers, such as external spreadsheets, or to create a separate event altogether specifically for carpooling. With this in mind, our app aims to bridge this gap, wherein passengers have access to all the information they need to make a decision for carpooling, while granting drivers have the ability to accept or reject specific passenger requests.
+
+Additionally, product decisions are made to revolve around giving the highest amount of relevant shareable information for each individual event, such as (but not limited to) pick up location, arrival time, and car size. We are aiming for a clear and distinct separation between drivers and passengers, ideally to provide an intuitive interface for creating and managing specific carpools. Initially, we had considered developing a web application to fulfill the same role, but ultimately decided against doing so for multiple reasons: a mobile app is moreso streamlined for use on-the-go as opposed to a web application that is not as well supported on mobile devices.

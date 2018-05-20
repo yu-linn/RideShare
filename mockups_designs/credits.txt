@@ -1,0 +1,4 @@
+Credits for some of the mockup stuff:
+ - Icons from Google's Material Icons resources
+ - Stock photos of cities and profile from Pexel.com
+ - Fonts provided by Google
