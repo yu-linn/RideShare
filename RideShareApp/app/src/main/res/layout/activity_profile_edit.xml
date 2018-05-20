@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ToolBarStyle"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileOk"
+        android:text="Picture chosen"
+        android:textColor="@color/colorAccent"
+        android:layout_marginEnd="16dp"
+        android:layout_alignBaseline="@+id/chooseProfilePhotoBtn"
+        android:layout_alignBottom="@+id/chooseProfilePhotoBtn"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:text="Pick your profile photo!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileLabel"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/aboutEditText"
+        android:layout_alignStart="@+id/aboutEditText" />
+
+    <TextView
+        android:text="Preferred Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:id="@+id/nameLabel"
+        android:layout_below="@+id/profileToolbar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:theme="@style/MyEditText"
+        android:layout_below="@+id/nameLabel"
+        android:layout_alignStart="@+id/nameLabel"
+        android:id="@+id/firstNameEditText"
+        android:hint="First Name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:theme="@style/MyEditText"
+        android:id="@+id/lastNameEditText"
+        android:hint="Last Name"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_alignStart="@+id/firstNameEditText" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:theme="@style/MyEditText"
+        android:ems="10"
+        android:layout_below="@+id/locationLabel"
+        android:layout_alignStart="@+id/locationLabel"
+        android:id="@+id/cityEditText"
+        android:hint="City" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/MyEditText"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/cityEditText"
+        android:layout_alignStart="@+id/cityEditText"
+        android:id="@+id/provEditText"
+        android:hint="State or Province" />
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/locationLabel"
+        android:layout_below="@+id/lastNameEditText"
+        android:layout_alignStart="@+id/lastNameEditText" />
+
+    <TextView
+        android:text="About Yourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/aboutLabel"
+        android:layout_below="@+id/provEditText"
+        android:layout_alignStart="@+id/aboutEditText" />
+
+    <EditText
+        android:layout_width="360dp"
+        android:theme="@style/MyEditText"
+        android:layout_height="90dp"
+        android:inputType="text|textLongMessage"
+        android:ems="10"
+        android:id="@+id/aboutEditText"
+        android:layout_below="@+id/aboutLabel"
+        android:layout_alignStart="@+id/provEditText"
+        android:gravity="left"
+        android:hint="Tell people something cool about yourself!" />
+
+    <Button
+        android:text="Update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/aboutEditText"
+        android:layout_marginBottom="35dp"
+        android:id="@+id/updateBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"
+        android:id="@+id/errorTextView"
+        android:layout_alignBaseline="@+id/updateBtn"
+        android:layout_alignBottom="@+id/updateBtn"
+        android:layout_alignStart="@+id/coverLabel" />
+
+    <Button
+        android:text="Choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseProfilePhotoBtn"
+        android:layout_alignBaseline="@+id/profileLabel"
+        android:layout_alignBottom="@+id/profileLabel"
+        android:layout_toStartOf="@+id/updateBtn" />
+
+    <Button
+        android:text="Choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chooseProfilePhotoBtn"
+        android:layout_alignStart="@+id/chooseProfilePhotoBtn"
+        android:layout_marginTop="14dp"
+        android:id="@+id/chooseCoverPhotoBtn" />
+
+    <TextView
+        android:text="Pick your cover photo!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/coverLabel"
+        android:layout_alignBaseline="@+id/chooseCoverPhotoBtn"
+        android:layout_alignBottom="@+id/chooseCoverPhotoBtn"
+        android:layout_alignStart="@+id/profileLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/coverOk"
+        android:text="Picture chosen"
+        android:layout_alignBaseline="@+id/chooseCoverPhotoBtn"
+        android:layout_alignBottom="@+id/chooseCoverPhotoBtn"
+        android:layout_alignStart="@+id/profileOk" />
+
+</RelativeLayout>

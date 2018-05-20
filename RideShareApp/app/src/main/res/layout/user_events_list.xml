@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <View
+        android:id="@+id/myRectangleView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/border_text"
+        android:layout_marginTop="0dp"
+
+        android:layout_marginStart="16dp"
+        android:layout_alignEnd="@+id/event_date_location" />
+
+    <TextView
+        android:id="@+id/event_name"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="HackMIT"
+        android:textSize="30sp"
+        android:layout_margin="16dp"
+
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/myRectangleView"
+        android:layout_alignStart="@+id/myRectangleView"
+        android:layout_alignEnd="@+id/myRectangleView" />
+
+
+    <TextView
+        android:text="17 October 2016
+77 Massachusetts Ave, Cambridge MA"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:textColor="#17202A"
+        android:id="@+id/event_date_location"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignBottom="@+id/event_name"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="(Seats Taken: 2 | Empty: 1 | Requests: 3)"
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:textSize="12sp"
+        android:layout_marginLeft="12dp"
+        android:textColor="#21618C"
+        android:id="@+id/driver_info"
+
+        android:layout_above="@+id/driver_or_pass"
+        android:layout_alignStart="@+id/myRectangleView" />
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/driver_or_pass"
+        android:layout_alignBottom="@+id/myRectangleView"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text=""
+        android:layout_width="325dp"
+        android:layout_height="120dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorAccent"
+
+        android:textStyle="bold"
+        android:id="@+id/driver_name"
+        android:layout_below="@+id/driver_info"
+        android:layout_alignStart="@+id/driver_info" />
+
+
+</RelativeLayout>

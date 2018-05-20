@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_featured_events"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project21.rideshareapp.FeaturedEventsActivity"
+    android:background="@drawable/bg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="14dp"
+                android:text="You may find these public events near you interesting"
+                android:textColor="#fff"
+                android:layout_below="@+id/name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="38dp"
+                android:text="featured events"
+                android:textStyle="bold"
+                android:textColor="#ffcc66"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp" />
+
+            <View
+                android:id="@+id/event1"
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:background="@drawable/event_container"
+
+                android:layout_marginTop="28dp"
+
+                android:layout_below="@+id/description"
+                android:layout_centerHorizontal="true" />
+                <TextView
+                    android:id="@+id/event1_name"
+                    android:paddingTop="8dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cherry Beach BBQ"
+                    android:textSize="30sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginStart="14dp"
+                    android:layout_alignTop="@+id/event1"
+                    android:layout_alignStart="@+id/event1" />
+                <TextView
+                    android:text="Dec. 11 2016 at Cherry Beach Road,\n Toronto ON"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event1_date_location"
+                    android:layout_below="@id/event1_name"
+                    android:layout_alignStart="@+id/event1_name" />
+                <TextView
+                    android:text="11 Current open searches"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event1_spots"
+                    android:layout_below="@id/event1_date_location"
+                    android:layout_alignStart="@+id/event1_date_location" />
+
+            <View
+                android:id="@+id/event2"
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:background="@drawable/event_container"
+
+                android:layout_marginTop="18dp"
+
+                android:layout_below="@+id/event1"
+                android:layout_alignStart="@+id/event1" />
+                <TextView
+                    android:id="@+id/event2_name"
+                    android:paddingTop="8dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="EDM Music Festival"
+                    android:textSize="30sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginStart="14dp"
+                    android:layout_alignTop="@+id/event2"
+                    android:layout_alignStart="@+id/event2" />
+                <TextView
+                    android:text="Dec. 13 2016 at 413 Westview Ave,\n Etobicoke ON"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event2_date_location"
+                    android:layout_below="@id/event2_name"
+                    android:layout_alignStart="@+id/event2_name" />
+                <TextView
+                    android:text="4 Current open searches"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event2_spots"
+                    android:layout_below="@id/event2_date_location"
+                    android:layout_alignStart="@+id/event2_date_location" />
+
+            <View
+                android:id="@+id/event3"
+                android:layout_width="300dp"
+                android:layout_height="125dp"
+                android:background="@drawable/event_container"
+
+                android:layout_marginTop="18dp"
+
+                android:layout_below="@+id/event2"
+                android:layout_alignStart="@+id/event2" />
+                <TextView
+                    android:id="@+id/event3_name"
+                    android:paddingTop="8dp"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:text="Grilled Cheese Expo"
+                    android:textSize="30sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginStart="14dp"
+                    android:layout_alignTop="@+id/event3"
+                    android:layout_alignStart="@+id/event3" />
+                <TextView
+                    android:text="Dec. 18 2016 at 123 Airport Road,\n Toronto ON"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event3_date_location"
+                    android:layout_below="@id/event3_name"
+                    android:layout_alignStart="@+id/event3_name" />
+                <TextView
+                    android:text="13 Current open searches"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:paddingTop="5dp"
+                    android:id="@+id/event3_spots"
+                    android:layout_below="@id/event3_date_location"
+                    android:layout_alignStart="@+id/event3_date_location" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

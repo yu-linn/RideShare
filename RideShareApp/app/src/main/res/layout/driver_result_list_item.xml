@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight">
+
+
+    <TextView
+        android:text="Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_result_list_driver_name"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"/>
+
+    <TextView
+        android:text="Car Capacity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_result_list_capacity"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_marginStart="219dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:text="Car Model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_result_list_message"
+        android:textSize="18sp"
+        android:textColor="@color/cardview_dark_background"
+        android:layout_below="@+id/driver_result_list_driver_name"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

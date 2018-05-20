@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="?android:attr/listPreferredItemHeight">
+
+
+    <TextView
+        android:id="@+id/secondLineDate"
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Event Date"
+        android:textSize="15sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/com_facebook_button_background_color_pressed"/>
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/secondLineDate"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:gravity="center_vertical"
+        android:text="Event Name"
+        android:textSize="20sp"
+        android:textColor="@color/com_facebook_button_background_color_pressed"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:text="Location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/secondLineLocation"
+        android:layout_below="@+id/firstLine"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp"
+        android:textColor="@color/com_facebook_button_background_color_pressed"/>
+
+</RelativeLayout>

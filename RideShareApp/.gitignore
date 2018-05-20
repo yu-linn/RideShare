@@ -1,0 +1,20 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+/.idea
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Extra XMLs created by Andrew's Android Studio for some reason
+/_windows
+IntelliLang.xml
+androidStudioFirstRun.xml
+debugger.xml
+diff.xml
+editor.xml
+ide.general.xml
+web-browsers.xml

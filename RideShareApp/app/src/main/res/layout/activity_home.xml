@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/activity_home"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    
+    
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/toolbar" />
+
+    
+    <TextView
+        android:text="Upcoming Events"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/upcomingevents"
+        android:textSize="24sp"
+        android:textColor="#909497"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="50dp"-->
+        <!--android:layout_alignParentStart="true">-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:clipToPadding="false"
+            android:layout_marginTop="125dp"
+            android:orientation="vertical">
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/user_events"></ListView>
+
+            <!--<View-->
+                <!--android:id="@+id/myRectangleView"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:background="@drawable/border_text"-->
+                <!--android:layout_marginTop="70dp"-->
+
+                <!--android:layout_marginStart="16dp"-->
+                <!--android:layout_alignEnd="@+id/event_date_location" />-->
+
+
+            <!--<View-->
+                <!--android:id="@+id/myRectangleView2"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="150dp"-->
+                <!--android:background="@drawable/border_text"-->
+                <!--android:layout_below="@+id/myRectangleView"-->
+                <!--android:layout_alignStart="@+id/myRectangleView"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:layout_alignEnd="@+id/event_date_location" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/event_name"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:text="HackMIT"-->
+                <!--android:textSize="30sp"-->
+                <!--android:layout_margin="16dp"-->
+
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_alignTop="@+id/myRectangleView"-->
+                <!--android:layout_alignStart="@+id/myRectangleView"-->
+                <!--android:layout_alignEnd="@+id/myRectangleView" />-->
+
+
+            <!--<TextView-->
+                <!--android:id="@+id/demo_title"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="100dp"-->
+                <!--android:text="Abby's Birthday"-->
+                <!--android:textSize="30sp"-->
+                <!--android:textColor="@color/colorPrimaryDark"-->
+                <!--android:layout_margin="16dp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:layout_alignTop="@+id/myRectangleView2"-->
+                <!--android:layout_alignStart="@+id/myRectangleView2"-->
+                <!--android:layout_alignEnd="@+id/myRectangleView2"/>-->
+
+            <!--<TextView-->
+                <!--android:text="09 October 2016-->
+<!--123 Some Random Street"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="90dp"-->
+                <!--android:textColor="#17202A"-->
+
+                <!--android:id="@+id/demo_date"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:layout_alignBottom="@+id/myRectangleView2"-->
+                <!--android:layout_alignStart="@+id/demo_title" />-->
+
+            <!--<TextView-->
+                <!--android:text="You are a Passenger"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="54dp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/driver_or_pass"-->
+                <!--android:layout_above="@+id/myRectangleView2"-->
+                <!--android:layout_alignStart="@+id/event_name"-->
+                <!--android:layout_alignEnd="@+id/event_name" />-->
+
+            <!--<TextView-->
+                <!--android:text="Driver: John Smith"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_marginTop="64dp"-->
+                <!--android:textSize="12sp"-->
+                <!--android:textColor="@color/colorAccent"-->
+
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/driver_name"-->
+                <!--android:layout_alignTop="@+id/event_date_location"-->
+                <!--android:layout_alignStart="@+id/event_name"-->
+                <!--android:layout_marginBottom="9dp" />-->
+
+
+            <!--<TextView-->
+                <!--android:text="17 October 2016-->
+<!--77 Massachusetts Ave, Cambridge MA"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="68dp"-->
+                <!--android:textColor="#17202A"-->
+                <!--android:id="@+id/event_date_location"-->
+                <!--android:layout_marginLeft="32dp"-->
+                <!--android:layout_marginRight="16dp"-->
+                <!--android:layout_marginBottom="30dp"-->
+                <!--android:layout_above="@+id/myRectangleView2"/>-->
+
+            <!--<TextView-->
+                <!--android:text="(Seats Taken: 2 | Empty: 1 | Requests: 3)"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="18dp"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_marginLeft="12dp"-->
+                <!--android:textColor="#21618C"-->
+                <!--android:id="@+id/driver_info"-->
+                <!--android:layout_alignBaseline="@+id/driver_or_pass_demo"-->
+
+                <!--android:layout_marginStart="170dp" />-->
+
+            <!--<TextView-->
+                <!--android:text="You are a Driver"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:textColor="@color/colorPrimary"-->
+                <!--android:textSize="18sp"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/driver_or_pass_demo"-->
+
+                <!--android:layout_alignBottom="@+id/demo_date"-->
+                <!--android:layout_alignStart="@+id/demo_title" />-->
+
+            <!--<TextView-->
+                <!--android:text="Tap to search for passengers"-->
+                <!--android:textSize="12sp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:textColor="@color/colorAccent"-->
+                <!--android:textStyle="bold"-->
+                <!--android:id="@+id/driver_search_passengers"-->
+                <!--android:layout_marginTop="14dp"-->
+                <!--android:clickable="true"-->
+                <!--android:layout_alignTop="@+id/driver_info"-->
+                <!--android:layout_alignStart="@+id/demo_title" />-->
+
+
+        </RelativeLayout>
+    <!--</ScrollView>-->
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/ic_person_black_24dp"
+        android:background="#FFFFFF"
+        android:id="@+id/profileButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/search_event"
+        android:hint="Search for an event"
+        android:textStyle="italic"
+        android:padding="12dp"
+        android:textColorHint="#808080"
+        android:background="#ffffff"
+        android:textColor="#17202A"
+
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_width="300dp"/>
+
+    <ImageView
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/ic_search_white_48dp"
+        android:id="@+id/search_button"
+        android:layout_alignTop="@+id/search_event"
+        android:layout_toEndOf="@+id/search_event"
+        android:layout_marginStart="11dp"
+        android:layout_width="320dp"/>
+
+    <ImageButton
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:srcCompat="@drawable/create_event_64dp"
+        android:background="#FFFFFF"
+        android:id="@+id/createEventButton"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp" />
+
+    <Button
+        android:text="Sign Out"
+        android:layout_width="120dp"
+        android:textSize="24dp"
+        android:layout_height="48dp"
+        android:id="@+id/signOutButton"
+        android:layout_alignEnd="@+id/profileButton"
+        android:background="@drawable/border_thick"
+        android:layout_alignBottom="@+id/createEventButton" />
+
+
+</RelativeLayout>

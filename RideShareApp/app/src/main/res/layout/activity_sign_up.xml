@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="project21.rideshareapp.SignUpActivity"
+    android:background="@drawable/bg">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/username_edit_text"
+        android:hint="email"
+        android:textColorHint="#808080"
+        android:background="#804d4d4d"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:layout_alignLeft="@+id/password_edit_text"
+        android:layout_alignStart="@+id/password_edit_text"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/background_light"/>
+
+
+    <TextView
+        android:text="carpooling made easy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textColor="#ccffffff"
+        android:layout_marginBottom="24dp"
+        android:layout_above="@+id/username_edit_text"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:textAlignment="center"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif-light"
+        android:text="rideshare"
+        android:layout_marginBottom="36dp"
+        android:textColor="#ccffcc66"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/password_edit_text"
+        android:hint="password"
+        android:fontFamily="Roboto"
+        android:textColorHint="#808080"
+        android:background="#804d4d4d"
+        android:padding="16dp"
+        android:layout_below="@+id/username_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:text="sign up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_btn"
+        android:layout_marginTop="33dp"
+        android:background="#7Cffeb3b"
+        android:textAllCaps="false"
+        android:fontFamily="Roboto"
+        android:layout_below="@+id/password_edit_text"
+        android:layout_alignEnd="@+id/textView"
+        android:layout_alignStart="@+id/textView" />
+
+</RelativeLayout>
