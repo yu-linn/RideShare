@@ -1,0 +1,50 @@
+Database design suggestion 2:
+
+User (userId, password, firstname, lastname, phonenumber, address, email, bio)
+      ------
+
+Driver (userId, eventId, postContent, meetingAddress, meetGeoloc, meetDatetime, numInCar, carCapacity, price, acceptedList, requestedList)
+        ---------------
+
+EventAdmin(userID, eventId)  <-- although we don't need it now for our implementation plan, we may need in the future. It is generally
+a good design to have distinct classes for future changes.
+ 
+Rider (userId, eventId, postContent, driverId, requestedList)
+       ----------------
+
+Event (eventId, adminIds, eventname, eventDatetime, eventGeoloc, postContent, isPrivate?, datetimeCreated?)
+       -------
+
+
+--
+From chat:
+- messages/chatting between each other is for further down the line, very low priority
+- don't need driverId/riderId in the driver/rider schemas, since that's the role of the userId
+- datetimeCreated? isn't really needed for event id
+- price not really needed?
+- (optional) posting time of the ride
+
+Proposed changes (using JSON):
+
+Event {
+    adminIds: [user1, user2..]
+    memberIds: [user1, user2, user3, ...]
+}
+
+
+
+Driver {
+   requestedPassengers: [passenger1, passenger2, ...]
+   acceptedPassengers: [passenger3, passenger4, ...]
+   
+   ...
+   ...
+}
+
+Rider {
+
+}
+
+User {
+
+}
